@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Paint</title>
+		
+		<link href="style.css" rel="stylesheet" />
+		<script src="jquery.js"></script>
+		<script src="classes.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+
+		<p>Tool to use:</p>
+		<div id="tools">
+			<input id="penTool" class="drawtool" type="image" src="pen1.png" alt="Submit" />
+			<input id="rectangleTool" class="drawtool" type="image" src="rectangle2.png" alt="Submit" />
+			<input id="circleTool" class="drawtool" type="image" src="circle.png" alt="Submit" />
+			<input id="lineTool" class="drawtool" type="image" src="line.png" alt="Submit" />
+			<input id="triangleTool" class="drawtool" type="image" src="triangle2.png" alt="Submit" />
+			<input id="textTool" class="drawtool" type="image" src="text.png" alt="Submit" />
+			<input id="undo" class="drawtool" type="image" src="undo.png" alt="Submit" />
+			<input id="clearButton" class="drawtool" type="image" src="trash.png" alt="Submit" />
+			<input id="redo" class="drawtool" type="image" src="redo.png" alt="Submit" />
+			<input id="saveTool" class="drawtool" type="image" src="save.png" alt="Submit" />	
+			<input type="text" id="words" value="Write Something"/>
+		</div>
+
+		<div>
+			<canvas id="c" width="800" height="590"></canvas>
+		</div>
+
+		<div id="toolbar">
+			<div id="rad">
+				Brush Size <span id="radval">1</span>
+				<input id="decrad" class="radcontrol" type="image" src="minus.png" alt="Submit" />
+				<input id="incrad" class="radcontrol" type="image" src="plus.png" alt="Submit" />
+			</div>
+		
+			<div id="penColor">
+				<button id="yellow" class="swatch" style="background-color: #FFF700"></button>
+				<button id="red" class="swatch" style="background-color: #FF6961"></button>
+				<button id="pink" class="swatch" style="background-color: #ff7bac"></button>
+				<button id="green" class="swatch" style="background-color: #77DD77"></button>
+				<button id="blue" class="swatch" style="background-color: #00d0f3"></button>
+				<button id="white" class="swatch" style="background-color: white"></button>
+				<button id="black" class="swatch" style="background-color: black"></button>
+				<button id="violet" class="swatch" style="background-color: #B19CD9"></button>
+				<button id="orange" class="swatch" style="background-color: #FFB347"></button>
+			</div>
+
+		</div>
+
+	</body>
+</html>
